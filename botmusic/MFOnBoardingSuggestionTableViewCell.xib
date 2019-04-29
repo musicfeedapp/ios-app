@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Musicfeed Icons 2.0.ttf">
+            <string>Musicfeed-Icons-2.0</string>
+        </mutableArray>
+        <mutableArray key="musicfeed-icons.ttf">
+            <string>musicfeed-icons</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MFOnBoardingSuggestionTableViewCell" rowHeight="45" id="KGk-i7-Jjw" customClass="MFOnBoardingSuggestionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8ta-4C-4P7">
+                        <rect key="frame" x="6" y="6" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="8ta-4C-4P7" secondAttribute="height" multiplier="1:1" id="BaC-ec-r7g"/>
+                            <constraint firstAttribute="height" constant="32" id="Rji-bf-3AW"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qz-7l-NW3">
+                        <rect key="frame" x="20" y="21" width="21" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="hBg-v9-WG2"/>
+                            <constraint firstAttribute="width" constant="21" id="j2b-EG-tyG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="musicfeed-icons" family="musicfeed-icons" pointSize="18"/>
+                        <color key="textColor" red="0.11372549019607843" green="0.45882352941176469" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carl Cox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9eg-dc-EcY">
+                        <rect key="frame" x="48" y="12" width="221" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjM-gP-fbd">
+                        <rect key="frame" x="274" y="2" width="35" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="Xwv-1X-zIi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Musicfeed-Icons-2.0" family="Musicfeed Icons 2.0" pointSize="40"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLc-Gs-uby">
+                        <rect key="frame" x="247" y="11" width="65" height="22"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="5B9-9Y-Vtz"/>
+                            <constraint firstAttribute="width" constant="65" id="Nap-EU-4b2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <state key="normal" title="FOLLOW">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="followButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sJ0-rH-KDt"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmK-ul-VSK">
+                        <rect key="frame" x="48" y="43" width="272" height="1"/>
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="29D-Lp-Czh"/>
+                        </constraints>
+                    </view>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIn-3P-Oxk">
+                        <rect key="frame" x="48" y="5" width="221" height="17"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.49411764705882355" green="0.49019607843137253" blue="0.50980392156862742" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Xartist, Yartist, Xuser Yuser and XX others follow Artist" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxc-GB-ABx">
+                        <rect key="frame" x="48" y="31" width="221" height="31"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wYD-r0-sEM">
+                        <rect key="frame" x="240" y="0.0" width="80" height="44"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8ta-4C-4P7" firstAttribute="trailing" secondItem="1Qz-7l-NW3" secondAttribute="trailing" constant="-3" id="1GX-ba-WMC"/>
+                    <constraint firstAttribute="trailing" secondItem="EmK-ul-VSK" secondAttribute="trailing" id="1V4-s9-otA"/>
+                    <constraint firstItem="QjM-gP-fbd" firstAttribute="leading" secondItem="9eg-dc-EcY" secondAttribute="trailing" constant="5" id="3qF-0y-zHY"/>
+                    <constraint firstItem="8ta-4C-4P7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="4Cg-NA-Jdr"/>
+                    <constraint firstItem="wLc-Gs-uby" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4m8-br-ToW"/>
+                    <constraint firstItem="9eg-dc-EcY" firstAttribute="leading" secondItem="8ta-4C-4P7" secondAttribute="trailing" constant="10" id="6Pf-HS-9fi"/>
+                    <constraint firstAttribute="bottom" secondItem="8ta-4C-4P7" secondAttribute="bottom" constant="6" id="Ce8-4A-VCm"/>
+                    <constraint firstItem="QjM-gP-fbd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Cfp-Dh-ydR"/>
+                    <constraint firstItem="wYD-r0-sEM" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.25" id="Ihf-mJ-lpp"/>
+                    <constraint firstItem="EmK-ul-VSK" firstAttribute="top" secondItem="gxc-GB-ABx" secondAttribute="bottom" constant="1" id="J5u-rd-SwP"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wLc-Gs-uby" secondAttribute="trailing" id="KTR-J5-yL9"/>
+                    <constraint firstAttribute="trailing" secondItem="QjM-gP-fbd" secondAttribute="trailing" constant="11" id="LDK-cw-NC2"/>
+                    <constraint firstItem="dIn-3P-Oxk" firstAttribute="leading" secondItem="9eg-dc-EcY" secondAttribute="leading" id="M1N-iq-L4w"/>
+                    <constraint firstAttribute="trailing" secondItem="wYD-r0-sEM" secondAttribute="trailing" id="OML-hV-utv"/>
+                    <constraint firstItem="9eg-dc-EcY" firstAttribute="trailing" secondItem="gxc-GB-ABx" secondAttribute="trailing" id="P3j-2b-4UG"/>
+                    <constraint firstAttribute="bottom" secondItem="QjM-gP-fbd" secondAttribute="bottom" constant="20" id="R53-NH-Fdu"/>
+                    <constraint firstItem="dIn-3P-Oxk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="XJK-iG-CBs"/>
+                    <constraint firstItem="wLc-Gs-uby" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="YOR-x1-Sh5"/>
+                    <constraint firstItem="wYD-r0-sEM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ylh-i1-iBN"/>
+                    <constraint firstItem="EmK-ul-VSK" firstAttribute="leading" secondItem="9eg-dc-EcY" secondAttribute="leading" id="Zvb-tw-2Oz"/>
+                    <constraint firstItem="dIn-3P-Oxk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="b5Z-bZ-zHN"/>
+                    <constraint firstItem="9eg-dc-EcY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="g1F-6H-UTc"/>
+                    <constraint firstItem="QjM-gP-fbd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="gU7-FT-vUj"/>
+                    <constraint firstItem="EmK-ul-VSK" firstAttribute="top" secondItem="gxc-GB-ABx" secondAttribute="bottom" constant="1" id="hUu-sL-9bd"/>
+                    <constraint firstItem="8ta-4C-4P7" firstAttribute="bottom" secondItem="1Qz-7l-NW3" secondAttribute="bottom" constant="-3" id="i8J-TT-TVF"/>
+                    <constraint firstItem="9eg-dc-EcY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="jz1-48-aub"/>
+                    <constraint firstAttribute="bottom" secondItem="wYD-r0-sEM" secondAttribute="bottom" id="kSp-VL-La3"/>
+                    <constraint firstItem="dIn-3P-Oxk" firstAttribute="trailing" secondItem="9eg-dc-EcY" secondAttribute="trailing" id="krN-Ne-xAm"/>
+                    <constraint firstItem="9eg-dc-EcY" firstAttribute="leading" secondItem="gxc-GB-ABx" secondAttribute="leading" id="mt7-q6-ByX"/>
+                    <constraint firstItem="gxc-GB-ABx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="23" id="pR4-na-gBx"/>
+                    <constraint firstItem="wLc-Gs-uby" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qF0-x6-N1F"/>
+                    <constraint firstItem="EmK-ul-VSK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sha-hL-OY6"/>
+                    <constraint firstAttribute="bottom" secondItem="EmK-ul-VSK" secondAttribute="bottom" id="uV9-G4-jrO"/>
+                    <constraint firstItem="8ta-4C-4P7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="yQx-KG-0gA"/>
+                    <constraint firstItem="8ta-4C-4P7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zqp-Qj-Yuu"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Ce8-4A-VCm"/>
+                        <exclude reference="yQx-KG-0gA"/>
+                        <exclude reference="XJK-iG-CBs"/>
+                        <exclude reference="jz1-48-aub"/>
+                        <exclude reference="J5u-rd-SwP"/>
+                        <exclude reference="hUu-sL-9bd"/>
+                        <exclude reference="sha-hL-OY6"/>
+                        <exclude reference="YOR-x1-Sh5"/>
+                        <exclude reference="qF0-x6-N1F"/>
+                        <exclude reference="R53-NH-Fdu"/>
+                        <exclude reference="gU7-FT-vUj"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="8ta-4C-4P7" id="tn0-SU-pNm"/>
+                <outlet property="checkMark" destination="1Qz-7l-NW3" id="hd2-0O-Pgu"/>
+                <outlet property="commonFollowersLabel" destination="gxc-GB-ABx" id="Tyi-S8-lWu"/>
+                <outlet property="followButton" destination="wLc-Gs-uby" id="Sc8-GD-lNu"/>
+                <outlet property="followedMark" destination="QjM-gP-fbd" id="RfS-wE-drq"/>
+                <outlet property="nameLabel" destination="9eg-dc-EcY" id="Ly6-bc-7z1"/>
+                <outlet property="nickLabel" destination="dIn-3P-Oxk" id="MTf-Fc-Ozl"/>
+                <outlet property="separatorHeight" destination="29D-Lp-Czh" id="bjY-7k-ted"/>
+                <outlet property="separatorView" destination="EmK-ul-VSK" id="tD8-Aa-eOu"/>
+                <outlet property="unfollowView" destination="wYD-r0-sEM" id="4dI-MM-Hvp"/>
+            </connections>
+            <point key="canvasLocation" x="186" y="318.5"/>
+        </tableViewCell>
+    </objects>
+</document>

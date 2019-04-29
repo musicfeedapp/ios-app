@@ -1,0 +1,17 @@
+-- BEGIN LICENSE v1.0 FD41AB7E --
+name:
+notes: Gracenote Open Developer Program
+start_date: 0000-00-00
+client_id: 456960
+musicid_file: enabled
+musicid_text: enabled
+musicid_stream: enabled
+musicid_cd: enabled
+playlist: enabled
+videoid: enabled
+video_explore: enabled
+local_images: enabled
+local_mood: enabled
+-- SIGNATURE FD41AB7E --
+lAADAgAelisr2qC4ql++6l4oCKgsV53buzgDhNC+JP4+wZqzAB8BRbQoijhFGcaZmpddvoSsMpwIVWAONVoO7wLFobzS
+-- END LICENSE FD41AB7E --

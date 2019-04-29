@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Musicfeed Icons 3.0.ttf">
+            <string>Musicfeed-Icons-3.0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFFeedOverlay">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See something you like?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5J4-CM-f1h">
+                    <rect key="frame" x="42" y="215" width="237" height="26"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Then tap the heart. You can organize them later in your profile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AgP-vD-r3y">
+                    <rect key="frame" x="30" y="261" width="260" height="40"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsL-Wr-nJa">
+                    <rect key="frame" x="143" y="165" width="35" height="35"/>
+                    <fontDescription key="fontDescription" name="Musicfeed-Icons-3.0" family="Musicfeed Icons 3.0" pointSize="35"/>
+                    <color key="textColor" red="0.91764705879999997" green="0.29803921570000003" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Omj-JY-rzg">
+                    <rect key="frame" x="125" y="331" width="71" height="37"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                    <inset key="contentEdgeInsets" minX="11" minY="7" maxX="11" maxY="7"/>
+                    <state key="normal" title="Got it">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AgP-vD-r3y" firstAttribute="top" secondItem="5J4-CM-f1h" secondAttribute="bottom" constant="20" id="16U-uF-R8s"/>
+                <constraint firstItem="Omj-JY-rzg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1qi-Jg-phS"/>
+                <constraint firstItem="5J4-CM-f1h" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.8" id="DSp-bz-x8R"/>
+                <constraint firstAttribute="trailing" secondItem="AgP-vD-r3y" secondAttribute="trailing" constant="30" id="MNO-vz-oRJ"/>
+                <constraint firstItem="5J4-CM-f1h" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MWq-yY-ifC"/>
+                <constraint firstItem="WsL-Wr-nJa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RcY-Rc-q9D"/>
+                <constraint firstItem="5J4-CM-f1h" firstAttribute="top" secondItem="WsL-Wr-nJa" secondAttribute="bottom" constant="15" id="iTd-Nz-96F"/>
+                <constraint firstItem="AgP-vD-r3y" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="opg-og-u7e"/>
+                <constraint firstItem="AgP-vD-r3y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="rmK-jc-RwF"/>
+                <constraint firstItem="Omj-JY-rzg" firstAttribute="top" secondItem="AgP-vD-r3y" secondAttribute="bottom" constant="30" id="yEy-35-Hst"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="gotItButton" destination="Omj-JY-rzg" id="tWr-5V-YNm"/>
+            </connections>
+            <point key="canvasLocation" x="182" y="296"/>
+        </view>
+    </objects>
+</document>

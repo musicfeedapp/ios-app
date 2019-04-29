@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFNewSearchHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cME-jZ-0TG">
+                    <rect key="frame" x="7" y="22" width="40" height="14"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xG9-xS-Sgc">
+                    <rect key="frame" x="269" y="22" width="62" height="14"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6W-QO-k7O" customClass="MFSeparatorView">
+                    <rect key="frame" x="0.0" y="39" width="336" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.67843137254901964" green="0.67843137254901964" blue="0.67843137254901964" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="hZZ-Rz-XLI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Y6W-QO-k7O" secondAttribute="bottom" id="1Ri-Hd-6Yh"/>
+                <constraint firstItem="cME-jZ-0TG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="7" id="3l1-rz-Wbb"/>
+                <constraint firstAttribute="trailing" secondItem="xG9-xS-Sgc" secondAttribute="trailing" constant="5" id="IRA-4A-Gcy"/>
+                <constraint firstItem="Y6W-QO-k7O" firstAttribute="top" secondItem="cME-jZ-0TG" secondAttribute="bottom" constant="3" id="aSs-9r-PdD"/>
+                <constraint firstAttribute="trailing" secondItem="Y6W-QO-k7O" secondAttribute="trailing" id="jua-rF-XLi"/>
+                <constraint firstItem="cME-jZ-0TG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kqq-BJ-hHq"/>
+                <constraint firstAttribute="trailing" secondItem="cME-jZ-0TG" secondAttribute="trailing" constant="10" id="oRi-Wa-ksv"/>
+                <constraint firstItem="Y6W-QO-k7O" firstAttribute="top" secondItem="xG9-xS-Sgc" secondAttribute="bottom" constant="3" id="upk-6m-ZMN"/>
+                <constraint firstItem="Y6W-QO-k7O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uwd-nB-NcE"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="kqq-BJ-hHq"/>
+                    <exclude reference="oRi-Wa-ksv"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="label" destination="cME-jZ-0TG" id="qR0-US-4TP"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="285.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Musicfeed Icons 2.0.ttf">
+            <string>Musicfeed-Icons-2.0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MFNotificationCell" id="KGk-i7-Jjw" customClass="MFNotificationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jta-Ha-VZX">
+                        <rect key="frame" x="10" y="6" width="38" height="38"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="iJn-Tm-RTZ"/>
+                            <constraint firstAttribute="width" secondItem="jta-Ha-VZX" secondAttribute="height" multiplier="1:1" id="jX1-db-7qR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="19"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arvo Part" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-JI-ylo">
+                        <rect key="frame" x="56" y="13" width="74" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loved your track" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCd-Rr-XnC">
+                        <rect key="frame" x="56" y="38" width="87" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Stanton Warriors" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCi-Pn-CTy">
+                        <rect key="frame" x="146" y="37" width="94" height="15"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="12 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAB-OU-Hci">
+                        <rect key="frame" x="268" y="19" width="37" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="99R-bc-lfa" customClass="MFSeparatorView">
+                        <rect key="frame" x="56" y="63" width="264" height="1"/>
+                        <color key="backgroundColor" red="0.67843137249999996" green="0.67843137249999996" blue="0.67843137249999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="lgT-go-Mn1"/>
+                        </constraints>
+                    </view>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClU-u2-mjf">
+                        <rect key="frame" x="248" y="18" width="16" height="16"/>
+                        <fontDescription key="fontDescription" name="Musicfeed-Icons-2.0" family="Musicfeed Icons 2.0" pointSize="16"/>
+                        <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6K-eT-zH9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jta-Ha-VZX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="03a-KI-3wz"/>
+                    <constraint firstItem="sCd-Rr-XnC" firstAttribute="centerY" secondItem="dCi-Pn-CTy" secondAttribute="centerY" id="7ZJ-ZO-WQI"/>
+                    <constraint firstItem="99R-bc-lfa" firstAttribute="top" secondItem="F6K-eT-zH9" secondAttribute="bottom" id="7hy-LY-j0V"/>
+                    <constraint firstItem="F6K-eT-zH9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Caa-mC-mtX"/>
+                    <constraint firstAttribute="trailing" secondItem="F6K-eT-zH9" secondAttribute="trailing" id="DMt-W2-288"/>
+                    <constraint firstItem="sCd-Rr-XnC" firstAttribute="leading" secondItem="3h4-JI-ylo" secondAttribute="leading" id="I2l-pO-0OK"/>
+                    <constraint firstItem="ClU-u2-mjf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3h4-JI-ylo" secondAttribute="trailing" constant="15" id="OnR-hg-Gsh"/>
+                    <constraint firstAttribute="bottom" secondItem="99R-bc-lfa" secondAttribute="bottom" id="QbD-6M-F7y"/>
+                    <constraint firstItem="jta-Ha-VZX" firstAttribute="centerY" secondItem="3h4-JI-ylo" secondAttribute="centerY" constant="1" id="To6-Lc-zSU"/>
+                    <constraint firstItem="3h4-JI-ylo" firstAttribute="leading" secondItem="jta-Ha-VZX" secondAttribute="trailing" constant="8" id="Uf8-0J-0re"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dCi-Pn-CTy" secondAttribute="trailing" constant="15" id="Y8M-PB-fWq"/>
+                    <constraint firstItem="F6K-eT-zH9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZFZ-Dl-OJx"/>
+                    <constraint firstItem="sCd-Rr-XnC" firstAttribute="baseline" secondItem="dCi-Pn-CTy" secondAttribute="baseline" id="ZS9-7A-p5J"/>
+                    <constraint firstItem="oAB-OU-Hci" firstAttribute="centerY" secondItem="ClU-u2-mjf" secondAttribute="centerY" id="aP5-zF-Zku"/>
+                    <constraint firstItem="3h4-JI-ylo" firstAttribute="leading" secondItem="99R-bc-lfa" secondAttribute="leading" id="arJ-JE-Wbf"/>
+                    <constraint firstItem="oAB-OU-Hci" firstAttribute="leading" secondItem="ClU-u2-mjf" secondAttribute="trailing" constant="4" id="dEB-MJ-yO6"/>
+                    <constraint firstItem="dCi-Pn-CTy" firstAttribute="leading" secondItem="sCd-Rr-XnC" secondAttribute="trailing" constant="3" id="fje-PN-6rJ"/>
+                    <constraint firstAttribute="bottom" secondItem="F6K-eT-zH9" secondAttribute="bottom" id="hdl-wl-Cs5"/>
+                    <constraint firstItem="jta-Ha-VZX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="hmN-Y5-61K"/>
+                    <constraint firstAttribute="trailing" secondItem="99R-bc-lfa" secondAttribute="trailing" id="i0D-OY-wge"/>
+                    <constraint firstAttribute="trailing" secondItem="oAB-OU-Hci" secondAttribute="trailing" constant="15" id="i9A-ad-lK2"/>
+                    <constraint firstItem="sCd-Rr-XnC" firstAttribute="top" secondItem="3h4-JI-ylo" secondAttribute="bottom" constant="4" id="rfj-6q-hF5"/>
+                    <constraint firstItem="99R-bc-lfa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tqV-xW-eLt"/>
+                    <constraint firstItem="3h4-JI-ylo" firstAttribute="baseline" secondItem="oAB-OU-Hci" secondAttribute="baseline" id="xCh-A5-dof"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="hdl-wl-Cs5"/>
+                        <exclude reference="7ZJ-ZO-WQI"/>
+                        <exclude reference="tqV-xW-eLt"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityLabel" destination="ClU-u2-mjf" id="G7s-K0-Oip"/>
+                <outlet property="avatarImageView" destination="jta-Ha-VZX" id="yOY-yB-o4O"/>
+                <outlet property="descriptionLabel" destination="sCd-Rr-XnC" id="M7Q-P7-uGO"/>
+                <outlet property="itemLabel" destination="dCi-Pn-CTy" id="MjK-WU-SKB"/>
+                <outlet property="mySeparatorView" destination="99R-bc-lfa" id="BBP-nA-DE9"/>
+                <outlet property="nameLabel" destination="3h4-JI-ylo" id="Hg7-Hz-3Rh"/>
+                <outlet property="readView" destination="F6K-eT-zH9" id="xkP-qz-4DT"/>
+                <outlet property="timeLabel" destination="oAB-OU-Hci" id="UE3-F7-rgU"/>
+            </connections>
+            <point key="canvasLocation" x="395" y="208.5"/>
+        </tableViewCell>
+    </objects>
+</document>

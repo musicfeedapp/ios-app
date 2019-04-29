@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="musicfeed-icons.ttf">
+            <string>musicfeed-icons</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MFOnBoardingFriendsAddTableViewCell" rowHeight="45" id="5uN-M7-Abv" customClass="MFOnBoardingFriendsAddTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5uN-M7-Abv" id="Npr-IV-LZD">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Invite Friends..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mNY-vG-SI3">
+                        <rect key="frame" x="15" y="12" width="120" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3EU-6v-BkA">
+                        <rect key="frame" x="0.0" y="43" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="TGQ-IS-cb1"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQ6-Wz-6B5">
+                        <rect key="frame" x="275" y="1" width="45" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="3K1-1E-Mwd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="musicfeed-icons" family="musicfeed-icons" pointSize="35"/>
+                        <state key="normal" title="">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PQ6-Wz-6B5" secondAttribute="trailing" id="39Z-jU-RRd"/>
+                    <constraint firstItem="mNY-vG-SI3" firstAttribute="leading" secondItem="Npr-IV-LZD" secondAttribute="leading" constant="15" id="E75-wQ-UPq"/>
+                    <constraint firstItem="3EU-6v-BkA" firstAttribute="leading" secondItem="Npr-IV-LZD" secondAttribute="leading" id="EqH-xy-j2U"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3EU-6v-BkA" secondAttribute="trailing" id="Kvj-tX-FsX"/>
+                    <constraint firstItem="mNY-vG-SI3" firstAttribute="top" secondItem="Npr-IV-LZD" secondAttribute="top" constant="15" id="Oc4-xJ-JKP"/>
+                    <constraint firstItem="mNY-vG-SI3" firstAttribute="leading" secondItem="Npr-IV-LZD" secondAttribute="leadingMargin" constant="15" id="TVm-La-NNh"/>
+                    <constraint firstItem="PQ6-Wz-6B5" firstAttribute="top" secondItem="Npr-IV-LZD" secondAttribute="top" constant="1" id="Um7-4a-YKM"/>
+                    <constraint firstAttribute="bottom" secondItem="3EU-6v-BkA" secondAttribute="bottom" id="YZW-zx-2QQ"/>
+                    <constraint firstAttribute="bottom" secondItem="PQ6-Wz-6B5" secondAttribute="bottom" id="aGm-Cr-sjU"/>
+                    <constraint firstAttribute="trailing" secondItem="3EU-6v-BkA" secondAttribute="trailing" id="d5f-fA-ODg"/>
+                    <constraint firstAttribute="centerY" secondItem="mNY-vG-SI3" secondAttribute="centerY" id="gXa-Y3-nfS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3EU-6v-BkA" secondAttribute="bottom" id="m24-Oo-bCx"/>
+                    <constraint firstItem="3EU-6v-BkA" firstAttribute="leading" secondItem="Npr-IV-LZD" secondAttribute="leadingMargin" id="xTS-lu-y5b"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Oc4-xJ-JKP"/>
+                        <exclude reference="TVm-La-NNh"/>
+                        <exclude reference="Kvj-tX-FsX"/>
+                        <exclude reference="m24-Oo-bCx"/>
+                        <exclude reference="xTS-lu-y5b"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="searchButton" destination="PQ6-Wz-6B5" id="ZGq-PQ-g9G"/>
+                <outlet property="separator" destination="3EU-6v-BkA" id="iQm-bE-3Dh"/>
+                <outlet property="separatorHeight" destination="TGQ-IS-cb1" id="Oti-N3-8RM"/>
+                <outlet property="textField" destination="mNY-vG-SI3" id="udh-5F-QvV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Musicfeed Icons 3.0.ttf">
+            <string>Musicfeed-Icons-3.0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="45" id="KGk-i7-Jjw" customClass="MFSuggestionsFilterTypeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpI-la-YWo">
+                        <rect key="frame" x="15" y="12" width="42" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sih-aZ-3oe">
+                        <rect key="frame" x="283" y="6" width="32" height="32"/>
+                        <fontDescription key="fontDescription" name="Musicfeed-Icons-3.0" family="Musicfeed Icons 3.0" pointSize="32"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bPp-Hm-n0c" customClass="MFSeparatorView">
+                        <rect key="frame" x="15" y="43" width="305" height="1"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="XRM-Df-EGy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Sih-aZ-3oe" secondAttribute="trailing" constant="5" id="A1Z-ly-Bjk"/>
+                    <constraint firstItem="SpI-la-YWo" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="FJU-eF-kXF"/>
+                    <constraint firstItem="SpI-la-YWo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="H2h-fP-f9h"/>
+                    <constraint firstAttribute="bottom" secondItem="bPp-Hm-n0c" secondAttribute="bottom" id="Jjz-3b-2nJ"/>
+                    <constraint firstAttribute="trailing" secondItem="bPp-Hm-n0c" secondAttribute="trailing" id="NqY-8A-9Vi"/>
+                    <constraint firstItem="Sih-aZ-3oe" firstAttribute="centerY" secondItem="SpI-la-YWo" secondAttribute="centerY" id="Qup-yR-aid"/>
+                    <constraint firstItem="bPp-Hm-n0c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="gY7-G5-BIZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="SpI-la-YWo" id="NcQ-Oe-PRD"/>
+                <outlet property="mark" destination="Sih-aZ-3oe" id="g0D-6s-plL"/>
+            </connections>
+            <point key="canvasLocation" x="518" y="276.5"/>
+        </tableViewCell>
+    </objects>
+</document>

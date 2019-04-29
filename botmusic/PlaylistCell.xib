@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Musicfeed Icons 2.0.ttf">
+            <string>Musicfeed-Icons-2.0</string>
+        </mutableArray>
+        <mutableArray key="Musicfeed Icons 3.0.ttf">
+            <string>Musicfeed-Icons-3.0</string>
+        </mutableArray>
+        <mutableArray key="musicfeed-icons.ttf">
+            <string>musicfeed-icons</string>
+            <string>musicfeed-icons</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="PlaylistCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLW-5K-iyY">
+                        <rect key="frame" x="8" y="0.0" width="312" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="9KA-5Z-car"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cPu-JE-wSr">
+                        <rect key="frame" x="8" y="10" width="49" height="49"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="9Vo-9H-5wj"/>
+                            <constraint firstAttribute="width" secondItem="cPu-JE-wSr" secondAttribute="height" multiplier="1:1" id="ORx-ZH-hTn"/>
+                            <constraint firstAttribute="height" constant="73" id="UKV-n9-9B3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9Vo-9H-5wj"/>
+                                <exclude reference="UKV-n9-9B3"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="all my tracks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aE8-Yj-luA">
+                        <rect key="frame" x="91" y="9" width="209" height="30"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="BhP-y9-by1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zp-Ln-ez8">
+                        <rect key="frame" x="69" y="17" width="17" height="17"/>
+                        <fontDescription key="fontDescription" name="Musicfeed-Icons-3.0" family="Musicfeed Icons 3.0" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.1019607843" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="236 tracks" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKb-kd-E3l">
+                        <rect key="frame" x="82" y="39" width="52" height="15"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="4hM-9d-Idi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XI0-GJ-hPK">
+                        <rect key="frame" x="163" y="47" width="0.0" height="0.0"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="musicfeed-icons" family="musicfeed-icons" pointSize="26"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQe-zS-giM">
+                        <rect key="frame" x="67" y="40" width="11" height="11"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="musicfeed-icons" family="musicfeed-icons" pointSize="11"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G75-qn-Gts">
+                        <rect key="frame" x="288" y="23" width="24" height="24"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Musicfeed-Icons-2.0" family="Musicfeed Icons 2.0" pointSize="24"/>
+                        <color key="textColor" red="0.68627450980392157" green="0.68627450980392157" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="SLW-5K-iyY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3VO-dF-VlD"/>
+                    <constraint firstItem="G75-qn-Gts" firstAttribute="centerY" secondItem="cPu-JE-wSr" secondAttribute="centerY" id="46n-vP-gfs"/>
+                    <constraint firstItem="5zp-Ln-ez8" firstAttribute="centerY" secondItem="aE8-Yj-luA" secondAttribute="centerY" constant="1" id="5M6-Zj-KEC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="NKb-kd-E3l" secondAttribute="bottom" constant="9" id="639-aE-qWu"/>
+                    <constraint firstItem="NKb-kd-E3l" firstAttribute="top" secondItem="aE8-Yj-luA" secondAttribute="bottom" id="8J2-Yb-tl8"/>
+                    <constraint firstItem="XI0-GJ-hPK" firstAttribute="leading" secondItem="NKb-kd-E3l" secondAttribute="trailing" constant="10" id="CLF-3v-PpA"/>
+                    <constraint firstAttribute="trailing" secondItem="SLW-5K-iyY" secondAttribute="trailing" id="FFm-3u-Ri3"/>
+                    <constraint firstItem="cQe-zS-giM" firstAttribute="leading" secondItem="cPu-JE-wSr" secondAttribute="trailing" constant="10" id="GWU-P5-365"/>
+                    <constraint firstItem="NKb-kd-E3l" firstAttribute="leading" secondItem="cPu-JE-wSr" secondAttribute="trailing" constant="25" id="Kan-nY-1Rj"/>
+                    <constraint firstItem="G75-qn-Gts" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Lwe-Sp-76e"/>
+                    <constraint firstItem="NKb-kd-E3l" firstAttribute="leading" secondItem="cPu-JE-wSr" secondAttribute="trailing" constant="17" id="MrB-fQ-uDc"/>
+                    <constraint firstItem="aE8-Yj-luA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="O6k-Y0-0RA"/>
+                    <constraint firstItem="SLW-5K-iyY" firstAttribute="leading" secondItem="cPu-JE-wSr" secondAttribute="leading" id="QdC-Ur-MY9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="aE8-Yj-luA" secondAttribute="trailing" constant="12" id="Sbr-Ue-4mR"/>
+                    <constraint firstItem="cPu-JE-wSr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="a7Z-nu-RvQ"/>
+                    <constraint firstItem="NKb-kd-E3l" firstAttribute="leading" secondItem="cPu-JE-wSr" secondAttribute="trailing" constant="30" id="atl-g9-TSi"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cPu-JE-wSr" secondAttribute="bottom" constant="2" id="biA-Qo-1qE"/>
+                    <constraint firstItem="SLW-5K-iyY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dpy-BX-bKG"/>
+                    <constraint firstItem="aE8-Yj-luA" firstAttribute="leading" secondItem="cPu-JE-wSr" secondAttribute="trailing" constant="34" id="e48-h2-qJB"/>
+                    <constraint firstItem="XI0-GJ-hPK" firstAttribute="top" secondItem="aE8-Yj-luA" secondAttribute="bottom" id="qkp-Ws-Cf8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="cPu-JE-wSr" secondAttribute="bottom" constant="2" id="s4j-5t-YCH"/>
+                    <constraint firstItem="cPu-JE-wSr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="uiX-hh-jGh"/>
+                    <constraint firstItem="cQe-zS-giM" firstAttribute="top" secondItem="aE8-Yj-luA" secondAttribute="bottom" constant="1" id="vcB-o8-ErI"/>
+                    <constraint firstItem="cQe-zS-giM" firstAttribute="top" secondItem="SLW-5K-iyY" secondAttribute="bottom" constant="58" id="vk5-Ki-fsu"/>
+                    <constraint firstItem="5zp-Ln-ez8" firstAttribute="leading" secondItem="cPu-JE-wSr" secondAttribute="trailing" constant="12" id="xTi-GO-bOl"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="3VO-dF-VlD"/>
+                        <exclude reference="s4j-5t-YCH"/>
+                        <exclude reference="vk5-Ki-fsu"/>
+                        <exclude reference="639-aE-qWu"/>
+                        <exclude reference="MrB-fQ-uDc"/>
+                        <exclude reference="atl-g9-TSi"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="durationLabel" destination="XI0-GJ-hPK" id="Z7Y-mb-qnW"/>
+                <outlet property="hearticon" destination="5zp-Ln-ez8" id="vdD-SF-tHp"/>
+                <outlet property="lockedPlaylistIcon" destination="cQe-zS-giM" id="0m4-9S-2gu"/>
+                <outlet property="numberOfTracksLeftConstraint" destination="Kan-nY-1Rj" id="m8j-5Q-DOe"/>
+                <outlet property="playlistImageView" destination="cPu-JE-wSr" id="mpd-D9-c0s"/>
+                <outlet property="playlistNameLabel" destination="aE8-Yj-luA" id="dFy-7p-mX9"/>
+                <outlet property="playlistNameLeading" destination="e48-h2-qJB" id="yXd-fv-mNU"/>
+                <outlet property="separatorHeightConstrain" destination="9KA-5Z-car" id="lI7-ja-R5L"/>
+                <outlet property="separatorView" destination="SLW-5K-iyY" id="Ow1-cy-bjU"/>
+                <outlet property="tracksLabel" destination="NKb-kd-E3l" id="Hqq-3L-sxE"/>
+            </connections>
+            <point key="canvasLocation" x="-45" y="199"/>
+        </tableViewCell>
+    </objects>
+</document>

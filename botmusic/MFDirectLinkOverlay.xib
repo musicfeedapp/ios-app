@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Musicfeed Icons 2.0.ttf">
+            <string>Musicfeed-Icons-2.0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QW3-Q7-VRJ" customClass="MFDirectLinkOverlay">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Got a direct link?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uR-bc-YIr">
+                    <rect key="frame" x="78" y="215" width="165" height="26"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can post links from YouTube, SoundCloud, and Spotify directly in the search field." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxD-Px-ozx">
+                    <rect key="frame" x="30" y="261" width="260" height="60"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUH-7R-zuA">
+                    <rect key="frame" x="125" y="351" width="71" height="37"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                    <inset key="contentEdgeInsets" minX="11" minY="7" maxX="11" maxY="7"/>
+                    <state key="normal" title="Got it">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8gh-XA-SNK">
+                    <rect key="frame" x="5" y="25" width="310" height="30"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpV-Pf-EO1">
+                            <rect key="frame" x="4" y="4" width="20" height="22"/>
+                            <fontDescription key="fontDescription" name="Musicfeed-Icons-2.0" family="Musicfeed Icons 2.0" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://youtu.be/dQw4w9WgXcQ" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="uqL-qj-7fQ">
+                            <rect key="frame" x="26" y="2" width="284" height="28"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="UpV-Pf-EO1" secondAttribute="bottom" constant="4" id="CJN-Pk-h2L"/>
+                        <constraint firstItem="UpV-Pf-EO1" firstAttribute="leading" secondItem="8gh-XA-SNK" secondAttribute="leading" constant="4" id="IZb-gG-shC"/>
+                        <constraint firstAttribute="trailing" secondItem="uqL-qj-7fQ" secondAttribute="trailing" id="KDy-bV-QBR"/>
+                        <constraint firstItem="UpV-Pf-EO1" firstAttribute="top" secondItem="8gh-XA-SNK" secondAttribute="top" constant="4" id="Xgv-lY-P0j"/>
+                        <constraint firstItem="uqL-qj-7fQ" firstAttribute="leading" secondItem="UpV-Pf-EO1" secondAttribute="trailing" constant="5" id="ZW3-LF-7tW"/>
+                        <constraint firstAttribute="bottom" secondItem="uqL-qj-7fQ" secondAttribute="bottom" id="lrH-lC-Ukw"/>
+                        <constraint firstItem="uqL-qj-7fQ" firstAttribute="top" secondItem="8gh-XA-SNK" secondAttribute="top" constant="2" id="qDi-O8-et1"/>
+                        <constraint firstAttribute="height" constant="30" id="rui-Ty-Clv"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2uR-bc-YIr" firstAttribute="centerX" secondItem="QW3-Q7-VRJ" secondAttribute="centerX" id="Ddl-x0-h2l"/>
+                <constraint firstItem="2uR-bc-YIr" firstAttribute="centerY" secondItem="QW3-Q7-VRJ" secondAttribute="centerY" multiplier="0.8" id="QM0-Vh-KgA"/>
+                <constraint firstItem="8gh-XA-SNK" firstAttribute="leading" secondItem="QW3-Q7-VRJ" secondAttribute="leading" constant="5" id="Xog-g3-oNA"/>
+                <constraint firstAttribute="trailing" secondItem="UxD-Px-ozx" secondAttribute="trailing" constant="30" id="Y78-Ww-bgo"/>
+                <constraint firstItem="dUH-7R-zuA" firstAttribute="top" secondItem="UxD-Px-ozx" secondAttribute="bottom" constant="30" id="Yf7-YP-cFS"/>
+                <constraint firstItem="UxD-Px-ozx" firstAttribute="top" secondItem="2uR-bc-YIr" secondAttribute="bottom" constant="20" id="bC3-6L-JaU"/>
+                <constraint firstAttribute="trailing" secondItem="8gh-XA-SNK" secondAttribute="trailing" constant="5" id="bOq-ih-SKq"/>
+                <constraint firstItem="UxD-Px-ozx" firstAttribute="leading" secondItem="QW3-Q7-VRJ" secondAttribute="leading" constant="30" id="ddh-8d-req"/>
+                <constraint firstItem="8gh-XA-SNK" firstAttribute="top" secondItem="QW3-Q7-VRJ" secondAttribute="top" constant="25" id="puk-b2-L1Q"/>
+                <constraint firstItem="dUH-7R-zuA" firstAttribute="centerX" secondItem="QW3-Q7-VRJ" secondAttribute="centerX" id="xO9-iI-i1K"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="gotItButton" destination="dUH-7R-zuA" id="KSn-hB-M7g"/>
+            </connections>
+            <point key="canvasLocation" x="371" y="284"/>
+        </view>
+    </objects>
+</document>

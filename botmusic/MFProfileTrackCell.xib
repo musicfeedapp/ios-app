@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MFProfileTrackCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6aT-kB-A1D">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="6aT-kB-A1D" secondAttribute="height" multiplier="1:1" id="Ku0-aM-Dm9"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5X-aZ-6Yv">
+                        <rect key="frame" x="25" y="25" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="8Fb-Q2-Yze"/>
+                            <constraint firstAttribute="width" constant="50" id="keP-i5-YN3"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Play.png" translatesAutoresizingMaskIntoConstraints="NO" id="OJW-8k-g0J">
+                        <rect key="frame" x="32" y="32" width="37" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="37" id="PDO-cT-uIZ"/>
+                            <constraint firstAttribute="height" constant="37" id="S9w-uZ-494"/>
+                        </constraints>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Gf4-sW-WAK">
+                        <rect key="frame" x="40" y="40" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stanton Warriors – Dip &amp; Get Low (Feat. Rodney P)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KRi-y3-nnG">
+                        <rect key="frame" x="0.0" y="100" width="100" height="43"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Gf4-sW-WAK" firstAttribute="centerY" secondItem="6aT-kB-A1D" secondAttribute="centerY" id="C4H-rA-gOD"/>
+                <constraint firstAttribute="trailing" secondItem="6aT-kB-A1D" secondAttribute="trailing" id="Hfl-jW-8IF"/>
+                <constraint firstItem="Q5X-aZ-6Yv" firstAttribute="centerY" secondItem="6aT-kB-A1D" secondAttribute="centerY" id="I1J-0K-emF"/>
+                <constraint firstItem="OJW-8k-g0J" firstAttribute="centerY" secondItem="6aT-kB-A1D" secondAttribute="centerY" id="Jyh-id-CfH"/>
+                <constraint firstAttribute="trailing" secondItem="KRi-y3-nnG" secondAttribute="trailing" id="Q3H-Wf-uab"/>
+                <constraint firstItem="KRi-y3-nnG" firstAttribute="top" secondItem="6aT-kB-A1D" secondAttribute="bottom" id="Shd-gs-HBm"/>
+                <constraint firstItem="Gf4-sW-WAK" firstAttribute="centerX" secondItem="6aT-kB-A1D" secondAttribute="centerX" id="YFz-e0-abj"/>
+                <constraint firstItem="6aT-kB-A1D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="bf2-hv-hsS"/>
+                <constraint firstItem="6aT-kB-A1D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="db5-8e-lnm"/>
+                <constraint firstItem="KRi-y3-nnG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pKg-kT-gpE"/>
+                <constraint firstItem="Q5X-aZ-6Yv" firstAttribute="centerX" secondItem="6aT-kB-A1D" secondAttribute="centerX" id="rcp-1S-sOq"/>
+                <constraint firstItem="OJW-8k-g0J" firstAttribute="centerX" secondItem="6aT-kB-A1D" secondAttribute="centerX" id="vcN-GM-aRT"/>
+            </constraints>
+            <size key="customSize" width="100" height="150"/>
+            <connections>
+                <outlet property="activityIndicator" destination="Gf4-sW-WAK" id="eiA-ga-qwA"/>
+                <outlet property="playerIndicatorContainer" destination="Q5X-aZ-6Yv" id="HKj-wK-Ekr"/>
+                <outlet property="smallPlayButton" destination="OJW-8k-g0J" id="1Q9-yO-OSv"/>
+                <outlet property="trackImage" destination="6aT-kB-A1D" id="lrb-YZ-dyc"/>
+                <outlet property="trackNameLabel" destination="KRi-y3-nnG" id="qWV-6D-AA5"/>
+            </connections>
+            <point key="canvasLocation" x="224" y="354"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Play.png" width="60" height="60"/>
+    </resources>
+</document>

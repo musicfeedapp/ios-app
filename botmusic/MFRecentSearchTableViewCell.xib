@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Musicfeed Icons 3.0.ttf">
+            <string>Musicfeed-Icons-3.0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="MFRecentSearchTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97E-Px-iG3">
+                        <rect key="frame" x="12" y="8" width="16" height="23"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="Musicfeed-Icons-3.0" family="Musicfeed Icons 3.0" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryd-yt-Ph2">
+                        <rect key="frame" x="38" y="10" width="42" height="20"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yd4-dQ-mvE" customClass="MFSeparatorView">
+                        <rect key="frame" x="12" y="38" width="308" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ylt-Dw-FMO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Yd4-dQ-mvE" secondAttribute="trailing" id="0Fi-Ok-cyd"/>
+                    <constraint firstItem="97E-Px-iG3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="1vf-jf-VnA"/>
+                    <constraint firstItem="ryd-yt-Ph2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3y9-qa-PPe"/>
+                    <constraint firstItem="97E-Px-iG3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Gf0-nd-W60"/>
+                    <constraint firstAttribute="bottom" secondItem="97E-Px-iG3" secondAttribute="bottom" constant="8" id="Roy-31-Mc1"/>
+                    <constraint firstAttribute="bottom" secondItem="Yd4-dQ-mvE" secondAttribute="bottom" id="S1M-FS-iCu"/>
+                    <constraint firstItem="Yd4-dQ-mvE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="U8s-wR-4sK"/>
+                    <constraint firstItem="ryd-yt-Ph2" firstAttribute="leading" secondItem="97E-Px-iG3" secondAttribute="trailing" constant="10" id="tWv-Cd-ElK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="label" destination="ryd-yt-Ph2" id="xzi-Ni-cV8"/>
+            </connections>
+            <point key="canvasLocation" x="222" y="73"/>
+        </tableViewCell>
+    </objects>
+</document>

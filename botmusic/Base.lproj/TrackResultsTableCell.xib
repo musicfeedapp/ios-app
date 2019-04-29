@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="musicfeed-icons.ttf">
+            <string>musicfeed-icons</string>
+            <string>musicfeed-icons</string>
+            <string>musicfeed-icons</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TrackResultsTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lrm-BP-iLI">
+                        <rect key="frame" x="10" y="11" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="BH9-1n-zOL"/>
+                            <constraint firstAttribute="width" constant="50" id="bdZ-HN-TOi"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stanton Warriors - Dip &amp; Get Low (Featuring ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLj-a4-Vp7">
+                        <rect key="frame" x="70" y="15" width="500" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JBm-zS-R96"/>
+                            <constraint firstAttribute="width" constant="500" id="LJt-kK-zdj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                        <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fzz-wz-SfR">
+                        <rect key="frame" x="70" y="35" width="80" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="9kt-ug-te1"/>
+                            <constraint firstAttribute="height" constant="15" id="iO0-HR-zHc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxP-sL-p2H">
+                        <rect key="frame" x="160" y="35" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Rwz-ua-IVh"/>
+                            <constraint firstAttribute="height" constant="30" id="SkM-Nb-TZ3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="musicfeed-icons" family="musicfeed-icons" pointSize="18"/>
+                        <state key="normal" title="">
+                            <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="didTouchUpCommentsButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yxX-au-3hg"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEf-aQ-lZz">
+                        <rect key="frame" x="190" y="35" width="15" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="ChB-EW-Abe"/>
+                            <constraint firstAttribute="width" constant="15" id="oSQ-y1-6AL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIu-Uc-lLZ">
+                        <rect key="frame" x="220" y="35" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="0Mr-Ox-0L0"/>
+                            <constraint firstAttribute="height" constant="30" id="kH1-eR-XY4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="musicfeed-icons" family="musicfeed-icons" pointSize="18"/>
+                        <state key="normal" title="">
+                            <color key="titleColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="didTouchUpLikesButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="R1D-MI-Xp4"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BRU-9K-U8N">
+                        <rect key="frame" x="250" y="35" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="GkL-pH-Rh9"/>
+                            <constraint firstAttribute="width" constant="30" id="ZQN-01-tnc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAY-QO-NYo">
+                        <rect key="frame" x="290" y="0.0" width="30" height="70"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMp-My-MKB">
+                                <rect key="frame" x="0.0" y="5" width="30" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="IfQ-vq-fsK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="musicfeed-icons" family="musicfeed-icons" pointSize="25"/>
+                                <state key="normal" title="">
+                                    <color key="titleColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTouchUpShowTrackInfoButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="p37-7C-93W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GMp-My-MKB" secondAttribute="trailing" id="5v9-06-D4r"/>
+                            <constraint firstAttribute="width" constant="30" id="8UT-Rz-sFZ"/>
+                            <constraint firstItem="GMp-My-MKB" firstAttribute="top" secondItem="vAY-QO-NYo" secondAttribute="top" constant="5" id="D1P-UM-kdT"/>
+                            <constraint firstAttribute="bottom" secondItem="GMp-My-MKB" secondAttribute="bottom" constant="25" id="v3M-O9-KxN"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2W9-rg-g97">
+                        <rect key="frame" x="280" y="35" width="40" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="EeA-KQ-Vc1"/>
+                            <constraint firstAttribute="width" constant="40" id="L2I-fH-mnK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <state key="normal" title="add">
+                            <color key="titleColor" red="0.95294117649999999" green="0.0" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="didTouchUpAddButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9WE-0E-CTo"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQW-1R-okH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="vEv-5g-f7O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bxP-sL-p2H" firstAttribute="leading" secondItem="fzz-wz-SfR" secondAttribute="trailing" constant="10" id="42l-Ei-yTN"/>
+                    <constraint firstItem="yLj-a4-Vp7" firstAttribute="top" secondItem="IQW-1R-okH" secondAttribute="bottom" constant="14" id="4m5-kc-vwp"/>
+                    <constraint firstAttribute="trailing" secondItem="2W9-rg-g97" secondAttribute="trailing" id="A2t-vJ-zGM"/>
+                    <constraint firstItem="fzz-wz-SfR" firstAttribute="top" secondItem="yLj-a4-Vp7" secondAttribute="bottom" id="BB6-HO-vxw"/>
+                    <constraint firstItem="BRU-9K-U8N" firstAttribute="top" secondItem="yLj-a4-Vp7" secondAttribute="bottom" id="Et7-lb-17P"/>
+                    <constraint firstItem="IEf-aQ-lZz" firstAttribute="top" secondItem="yLj-a4-Vp7" secondAttribute="bottom" id="F57-JW-Del"/>
+                    <constraint firstItem="YIu-Uc-lLZ" firstAttribute="leading" secondItem="IEf-aQ-lZz" secondAttribute="trailing" constant="15" id="Fag-1N-nHk"/>
+                    <constraint firstItem="BRU-9K-U8N" firstAttribute="leading" secondItem="YIu-Uc-lLZ" secondAttribute="trailing" id="NRk-rO-hKn"/>
+                    <constraint firstItem="IQW-1R-okH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PIZ-KD-PrX"/>
+                    <constraint firstItem="YIu-Uc-lLZ" firstAttribute="top" secondItem="yLj-a4-Vp7" secondAttribute="bottom" id="RYb-nH-a1U"/>
+                    <constraint firstItem="lrm-BP-iLI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RZR-Qe-4mG"/>
+                    <constraint firstItem="yLj-a4-Vp7" firstAttribute="leading" secondItem="lrm-BP-iLI" secondAttribute="trailing" constant="10" id="TBE-bY-9ch"/>
+                    <constraint firstAttribute="bottom" secondItem="2W9-rg-g97" secondAttribute="bottom" constant="6" id="TMn-N3-isv"/>
+                    <constraint firstItem="bxP-sL-p2H" firstAttribute="top" secondItem="yLj-a4-Vp7" secondAttribute="bottom" id="UU6-8M-Hea"/>
+                    <constraint firstItem="vAY-QO-NYo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VQ5-lr-mvs"/>
+                    <constraint firstAttribute="bottom" secondItem="vAY-QO-NYo" secondAttribute="bottom" constant="1" id="Yrb-oz-Kma"/>
+                    <constraint firstItem="IQW-1R-okH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Z8j-Kl-spx"/>
+                    <constraint firstItem="IEf-aQ-lZz" firstAttribute="leading" secondItem="bxP-sL-p2H" secondAttribute="trailing" id="chp-K7-AKZ"/>
+                    <constraint firstItem="fzz-wz-SfR" firstAttribute="leading" secondItem="lrm-BP-iLI" secondAttribute="trailing" constant="10" id="k5a-pe-GxM"/>
+                    <constraint firstAttribute="trailing" secondItem="vAY-QO-NYo" secondAttribute="trailing" id="oD9-oa-eYc"/>
+                    <constraint firstAttribute="trailing" secondItem="IQW-1R-okH" secondAttribute="trailing" id="qrY-eO-VzO"/>
+                    <constraint firstItem="lrm-BP-iLI" firstAttribute="top" secondItem="IQW-1R-okH" secondAttribute="bottom" constant="10" id="xkl-rx-LDG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addButton" destination="2W9-rg-g97" id="CPD-rv-tI0"/>
+                <outlet property="authorLabel" destination="fzz-wz-SfR" id="ftd-WA-eWf"/>
+                <outlet property="commentsButton" destination="bxP-sL-p2H" id="jzb-hu-emk"/>
+                <outlet property="commentsLabel" destination="IEf-aQ-lZz" id="Xhz-jf-NtV"/>
+                <outlet property="likesButton" destination="YIu-Uc-lLZ" id="xc4-lZ-Wb7"/>
+                <outlet property="likesLabel" destination="BRU-9K-U8N" id="TlO-iU-ep4"/>
+                <outlet property="trackImageView" destination="lrm-BP-iLI" id="mgS-Y8-RNU"/>
+                <outlet property="trackNameLabel" destination="yLj-a4-Vp7" id="gh9-ea-wfZ"/>
+            </connections>
+            <point key="canvasLocation" x="97" y="405"/>
+        </tableViewCell>
+    </objects>
+</document>

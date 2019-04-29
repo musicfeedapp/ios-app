@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="musicfeed-icons.ttf">
+            <string>musicfeed-icons</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MFAddPlaylistTableViewCell" rowHeight="45" id="I71-Ut-7a0" customClass="MFAddPlaylistTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I71-Ut-7a0" id="oNQ-yC-6sP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New Playlist..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TVW-vk-MPc">
+                        <rect key="frame" x="15" y="12" width="240" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91h-Yq-oG4">
+                        <rect key="frame" x="0.0" y="1" width="320" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="xJJ-Oc-Dtp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="musicfeed-icons" family="musicfeed-icons" pointSize="35"/>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                        <state key="normal" title="">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xJJ-Oc-Dtp"/>
+                            </mask>
+                        </variation>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="91h-Yq-oG4" firstAttribute="top" secondItem="oNQ-yC-6sP" secondAttribute="top" constant="1" id="5ci-t9-Wpr"/>
+                    <constraint firstItem="TVW-vk-MPc" firstAttribute="leading" secondItem="oNQ-yC-6sP" secondAttribute="leadingMargin" constant="15" id="GwN-ee-KEP"/>
+                    <constraint firstItem="TVW-vk-MPc" firstAttribute="top" secondItem="oNQ-yC-6sP" secondAttribute="top" constant="15" id="N8P-jQ-q0Z"/>
+                    <constraint firstAttribute="trailing" secondItem="91h-Yq-oG4" secondAttribute="trailing" id="QE7-Hn-01A"/>
+                    <constraint firstAttribute="bottom" secondItem="91h-Yq-oG4" secondAttribute="bottom" id="YBx-Wc-rWF"/>
+                    <constraint firstItem="91h-Yq-oG4" firstAttribute="leading" secondItem="TVW-vk-MPc" secondAttribute="trailing" constant="20" id="haR-2y-SCY"/>
+                    <constraint firstItem="TVW-vk-MPc" firstAttribute="leading" secondItem="oNQ-yC-6sP" secondAttribute="leading" constant="15" id="kdr-SW-vjd"/>
+                    <constraint firstAttribute="trailing" secondItem="TVW-vk-MPc" secondAttribute="trailing" constant="65" id="mBZ-vJ-Zrk"/>
+                    <constraint firstAttribute="centerY" secondItem="TVW-vk-MPc" secondAttribute="centerY" id="rpd-PL-9Vm"/>
+                    <constraint firstItem="91h-Yq-oG4" firstAttribute="leading" secondItem="oNQ-yC-6sP" secondAttribute="leading" id="spZ-hd-dFx"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="haR-2y-SCY"/>
+                        <exclude reference="GwN-ee-KEP"/>
+                        <exclude reference="N8P-jQ-q0Z"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addPlaylistButton" destination="91h-Yq-oG4" id="KLf-7L-fMY"/>
+                <outlet property="addPlaylistNameTextField" destination="TVW-vk-MPc" id="ayi-bA-Z7H"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

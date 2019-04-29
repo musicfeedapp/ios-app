@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Musicfeed Icons 3.0.ttf">
+            <string>Musicfeed-Icons-3.0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MFProfilePartViewController">
+            <connections>
+                <outlet property="collectionView" destination="fTl-zM-Qz3" id="GE3-fD-hmQ"/>
+                <outlet property="countLabel" destination="vDf-vr-jTd" id="DiL-xR-6Hu"/>
+                <outlet property="countLabelTrailing" destination="FMj-jW-mro" id="teL-ZY-fbH"/>
+                <outlet property="flowLayout" destination="HiE-Lr-n15" id="tns-VP-vip"/>
+                <outlet property="moreButton" destination="uYb-oJ-q5z" id="xHK-9A-FHB"/>
+                <outlet property="titleButton" destination="ah3-y2-3vv" id="NVP-j1-YE0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="224"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fTl-zM-Qz3">
+                    <rect key="frame" x="0.0" y="43" width="342" height="180"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="F9H-ne-JrM"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="14" minimumInteritemSpacing="14" id="HiE-Lr-n15">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="14" minY="0.0" maxX="14" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6V5-JK-BXD"/>
+                        <outlet property="delegate" destination="-1" id="7mJ-zK-iXY"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yd-50-vIj">
+                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ah3-y2-3vv">
+                            <rect key="frame" x="14" y="0.0" width="263" height="43"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <state key="normal" title="Tracks">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="titleTapped:" destination="-1" eventType="touchUpInside" id="fVp-hd-xfb"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDf-vr-jTd">
+                            <rect key="frame" x="307" y="22" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYb-oJ-q5z">
+                            <rect key="frame" x="277" y="3" width="65" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="5Gt-8h-fm4"/>
+                                <constraint firstAttribute="width" constant="65" id="6ds-qn-8R9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Musicfeed-Icons-3.0" family="Musicfeed Icons 3.0" pointSize="24"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="7" maxY="0.0"/>
+                            <state key="normal" title="">
+                                <color key="titleColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="moreTapped:" destination="-1" eventType="touchUpInside" id="wmv-nS-m5e"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="uYb-oJ-q5z" firstAttribute="leading" secondItem="ah3-y2-3vv" secondAttribute="trailing" id="0Dv-u1-7gW"/>
+                        <constraint firstAttribute="trailing" secondItem="vDf-vr-jTd" secondAttribute="trailing" constant="35" id="FMj-jW-mro"/>
+                        <constraint firstItem="ah3-y2-3vv" firstAttribute="leading" secondItem="0Yd-50-vIj" secondAttribute="leading" constant="14" id="Jo7-SX-5lF"/>
+                        <constraint firstItem="uYb-oJ-q5z" firstAttribute="centerY" secondItem="0Yd-50-vIj" secondAttribute="centerY" constant="-1" id="P3c-nX-dVi"/>
+                        <constraint firstItem="vDf-vr-jTd" firstAttribute="leading" secondItem="ah3-y2-3vv" secondAttribute="trailing" constant="10" id="PCN-OW-MUd"/>
+                        <constraint firstAttribute="height" constant="43" id="U9H-hT-H80"/>
+                        <constraint firstItem="ah3-y2-3vv" firstAttribute="top" secondItem="0Yd-50-vIj" secondAttribute="top" id="VMh-en-AN9"/>
+                        <constraint firstAttribute="bottom" secondItem="ah3-y2-3vv" secondAttribute="bottom" id="aWd-1R-yEx"/>
+                        <constraint firstAttribute="trailing" secondItem="uYb-oJ-q5z" secondAttribute="trailing" id="hTc-SR-COv"/>
+                        <constraint firstItem="ah3-y2-3vv" firstAttribute="centerY" secondItem="0Yd-50-vIj" secondAttribute="centerY" id="v3j-f4-7U5"/>
+                        <constraint firstItem="vDf-vr-jTd" firstAttribute="centerY" secondItem="0Yd-50-vIj" secondAttribute="centerY" id="xHL-Yu-MIe"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="v3j-f4-7U5"/>
+                            <exclude reference="PCN-OW-MUd"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2F-Af-7Fi" customClass="MFSeparatorView">
+                    <rect key="frame" x="14" y="223" width="328" height="1"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="BAi-he-bsF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="R2F-Af-7Fi" secondAttribute="bottom" id="3Pq-OS-kXh"/>
+                <constraint firstItem="R2F-Af-7Fi" firstAttribute="top" secondItem="fTl-zM-Qz3" secondAttribute="bottom" id="74g-r5-ZXT"/>
+                <constraint firstItem="fTl-zM-Qz3" firstAttribute="top" secondItem="0Yd-50-vIj" secondAttribute="bottom" id="7IT-hY-Ljv"/>
+                <constraint firstItem="fTl-zM-Qz3" firstAttribute="top" secondItem="0Yd-50-vIj" secondAttribute="bottom" id="8DJ-gv-kLx"/>
+                <constraint firstAttribute="trailing" secondItem="R2F-Af-7Fi" secondAttribute="trailing" id="Doa-MF-Xx0"/>
+                <constraint firstAttribute="trailing" secondItem="0Yd-50-vIj" secondAttribute="trailing" id="InF-YI-fzn"/>
+                <constraint firstItem="0Yd-50-vIj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Py7-vW-jLK"/>
+                <constraint firstItem="0Yd-50-vIj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SZr-Q6-AaJ"/>
+                <constraint firstItem="fTl-zM-Qz3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xfh-9k-R1m"/>
+                <constraint firstAttribute="trailing" secondItem="fTl-zM-Qz3" secondAttribute="trailing" id="cPO-Wr-z0C"/>
+                <constraint firstItem="R2F-Af-7Fi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="dus-OE-IlS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7IT-hY-Ljv"/>
+                    <exclude reference="74g-r5-ZXT"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="492" y="203"/>
+        </view>
+    </objects>
+</document>

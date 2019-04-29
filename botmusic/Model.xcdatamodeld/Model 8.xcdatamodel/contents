@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="8195" systemVersion="14F27" minimumToolsVersion="Xcode 4.3">
+    <entity name="MFActivityItem" representedClassName="MFActivityItem" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createdAtString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventableId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventableType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userAvatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userExtId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userFacebookId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="track" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MFTrackItem" inverseName="activities" inverseEntity="MFTrackItem" syncable="YES"/>
+    </entity>
+    <entity name="MFAddUserNotification" representedClassName="MFAddUserNotification" parentEntity="MFUserNotification" syncable="YES">
+        <attribute name="playlistID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playlistTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MFCommentItem" representedClassName="MFCommentItem" syncable="YES">
+        <attribute name="autorAvatarUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="autorFacebookId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="user_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userExtId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="track" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MFTrackItem" inverseName="allComments" inverseEntity="MFTrackItem" syncable="YES"/>
+    </entity>
+    <entity name="MFCommentUserNotification" representedClassName="MFCommentUserNotification" parentEntity="MFUserNotification" syncable="YES">
+        <attribute name="commentID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="commentText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MFFollowItem" representedClassName="MFFollowItem" syncable="YES">
+        <attribute name="extId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebookID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFollowed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isVerified" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="picture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timelineCount_n" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="followed_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MFUserInfo" inverseName="followed" inverseEntity="MFUserInfo" syncable="YES"/>
+        <relationship name="followingArtists_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MFUserInfo" inverseName="followingArtists" inverseEntity="MFUserInfo" syncable="YES"/>
+        <relationship name="followingFriends_inv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MFUserInfo" inverseName="followingFriends" inverseEntity="MFUserInfo" syncable="YES"/>
+        <relationship name="userInfo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MFUserInfo" inverseName="myFollowItem" inverseEntity="MFUserInfo" syncable="YES"/>
+    </entity>
+    <entity name="MFFollowUserNotification" representedClassName="MFFollowUserNotification" parentEntity="MFUserNotification" syncable="YES"/>
+    <entity name="MFLikeUserNotification" representedClassName="MFLikeUserNotification" parentEntity="MFUserNotification" syncable="YES">
+        <attribute name="trackID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackTitle" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="MFPlaylistItem" representedClassName="MFPlaylistItem" syncable="YES">
+        <attribute name="isPrivate" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playlistArtwork" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tracksCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="songs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MFTrackItem" inverseName="belongToPlaylists" inverseEntity="MFTrackItem" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MFUserInfo" inverseName="playlists" inverseEntity="MFUserInfo" syncable="YES"/>
+    </entity>
+    <entity name="MFSuggestion" representedClassName="MFSuggestion" syncable="YES">
+        <attribute name="avatar_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ext_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebook_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebook_link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="genres_string" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="is_followed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="is_verified" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tracks_count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="twitter_link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="suggestionReverse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MFUserInfo" inverseName="suggestions" inverseEntity="MFUserInfo" syncable="YES"/>
+        <relationship name="timelines" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MFTrackItem" inverseName="belongToSuggestions" inverseEntity="MFTrackItem" syncable="YES"/>
+        <relationship name="trendingArtist_reverse" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MFUserInfo" inverseName="trendingArtists" inverseEntity="MFUserInfo" syncable="YES"/>
+    </entity>
+    <entity name="MFTrackItem" representedClassName="MFTrackItem" syncable="YES">
+        <attribute name="album" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="artist" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="author" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorExtId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorIsFollowed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="authorName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="authorPicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="facebookShared" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="favourite" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="fontColor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isFeedTrack" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isLiked" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isPlayed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isRemovedFromFeed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isVerifiedUser" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="itemId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iTunesLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastActivityTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastActivityType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastFeedAppearanceDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastPlayedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="likes" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="stream" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="timestampString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackPicture" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trackState_n" optional="YES" transient="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="twitterShared" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="youtubeDirectLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="youtubeLink" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MFActivityItem" inverseName="track" inverseEntity="MFActivityItem" syncable="YES"/>
+        <relationship name="allComments" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MFCommentItem" inverseName="track" inverseEntity="MFCommentItem" syncable="YES"/>
+        <relationship name="belongToPlaylists" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MFPlaylistItem" inverseName="songs" inverseEntity="MFPlaylistItem" syncable="YES"/>
+        <relationship name="belongToSuggestions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MFSuggestion" inverseName="timelines" inverseEntity="MFSuggestion" syncable="YES"/>
+        <relationship name="belongToUsers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MFUserInfo" inverseName="tracks" inverseEntity="MFUserInfo" syncable="YES"/>
+    </entity>
+    <entity name="MFUserInfo" representedClassName="MFUserInfo" syncable="YES">
+        <attribute name="background" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="extId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebookID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="facebookLink" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="followedCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="followingsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="isAnotherUser" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isArtist" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isFacebookExpired" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isFollowed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isVerified" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playlistsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="profileImage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="songsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="suggestionsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="timelineCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="followed" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MFFollowItem" inverseName="followed_inv" inverseEntity="MFFollowItem" syncable="YES"/>
+        <relationship name="followingArtists" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MFFollowItem" inverseName="followingArtists_inv" inverseEntity="MFFollowItem" syncable="YES"/>
+        <relationship name="followingFriends" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MFFollowItem" inverseName="followingFriends_inv" inverseEntity="MFFollowItem" syncable="YES"/>
+        <relationship name="myFollowItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MFFollowItem" inverseName="userInfo" inverseEntity="MFFollowItem" syncable="YES"/>
+        <relationship name="playlists" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MFPlaylistItem" inverseName="user" inverseEntity="MFPlaylistItem" syncable="YES"/>
+        <relationship name="suggestions" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MFSuggestion" inverseName="suggestionReverse" inverseEntity="MFSuggestion" syncable="YES"/>
+        <relationship name="tracks" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MFTrackItem" inverseName="belongToUsers" inverseEntity="MFTrackItem" syncable="YES"/>
+        <relationship name="trendingArtists" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="MFSuggestion" inverseName="trendingArtist_reverse" inverseEntity="MFSuggestion" syncable="YES"/>
+    </entity>
+    <entity name="MFUserNotification" representedClassName="MFUserNotification" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userExtID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userPicture" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="MFActivityItem" positionX="-6122" positionY="405" width="128" height="193"/>
+        <element name="MFAddUserNotification" positionX="-5913" positionY="306" width="128" height="105"/>
+        <element name="MFCommentItem" positionX="-6122" positionY="153" width="128" height="163"/>
+        <element name="MFCommentUserNotification" positionX="-5886" positionY="333" width="128" height="105"/>
+        <element name="MFFollowItem" positionX="-5256" positionY="170" width="128" height="30"/>
+        <element name="MFFollowUserNotification" positionX="-5904" positionY="315" width="128" height="45"/>
+        <element name="MFLikeUserNotification" positionX="-5895" positionY="324" width="128" height="75"/>
+        <element name="MFPlaylistItem" positionX="-5715" positionY="153" width="128" height="150"/>
+        <element name="MFSuggestion" positionX="-5249" positionY="477" width="128" height="300"/>
+        <element name="MFTrackItem" positionX="-5895" positionY="153" width="144" height="660"/>
+        <element name="MFUserInfo" positionX="-5535" positionY="258" width="128" height="495"/>
+        <element name="MFUserNotification" positionX="-5922" positionY="297" width="128" height="135"/>
+    </elements>
+</model>

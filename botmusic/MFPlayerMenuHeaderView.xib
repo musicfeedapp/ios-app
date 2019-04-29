@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Musicfeed Icons 3.0.ttf">
+            <string>Musicfeed-Icons-3.0</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MFPlayerMenuHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="46"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUd-G6-b1i">
+                    <rect key="frame" x="0.0" y="0.0" width="318" height="46"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NhZ-iw-yF4">
+                        <rect key="frame" x="0.0" y="0.0" width="318" height="46"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOW PLAYING" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ad6-Sd-yJ9">
+                                <rect key="frame" x="10" y="28" width="83" height="14"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ad6-Sd-yJ9" secondAttribute="bottom" constant="4" id="Hj7-Sw-fN9"/>
+                            <constraint firstItem="ad6-Sd-yJ9" firstAttribute="leading" secondItem="NhZ-iw-yF4" secondAttribute="leading" constant="10" id="o3y-If-wvD"/>
+                        </constraints>
+                    </view>
+                    <animations/>
+                    <vibrancyEffect>
+                        <blurEffect style="dark"/>
+                    </vibrancyEffect>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT8-MR-Bgg">
+                    <rect key="frame" x="274" y="10" width="44" height="44"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="ZLr-bp-Ql8"/>
+                        <constraint firstAttribute="height" constant="44" id="xGa-tg-jh1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Musicfeed-Icons-3.0" family="Musicfeed Icons 3.0" pointSize="30"/>
+                    <state key="normal" title="">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BT8-MR-Bgg" secondAttribute="trailing" id="4e6-gq-BDW"/>
+                <constraint firstAttribute="bottom" secondItem="BT8-MR-Bgg" secondAttribute="bottom" constant="-8" id="FoF-9H-cmE"/>
+                <constraint firstAttribute="bottom" secondItem="bUd-G6-b1i" secondAttribute="bottom" id="H8n-4y-wyG"/>
+                <constraint firstItem="bUd-G6-b1i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fns-tW-psf"/>
+                <constraint firstAttribute="trailing" secondItem="bUd-G6-b1i" secondAttribute="trailing" id="iXF-xc-3Gc"/>
+                <constraint firstItem="bUd-G6-b1i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="yli-7d-UR6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label" destination="ad6-Sd-yJ9" id="oEe-0v-qNO"/>
+                <outlet property="shuffleButton" destination="BT8-MR-Bgg" id="N6g-W6-Bmi"/>
+            </connections>
+            <point key="canvasLocation" x="493" y="311"/>
+        </view>
+    </objects>
+</document>

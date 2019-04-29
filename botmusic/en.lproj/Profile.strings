@@ -1,0 +1,72 @@
+
+/* Class = "UINavigationItem"; title = "Scroll"; ObjectID = "2RE-j4-75h"; */
+"2RE-j4-75h.title" = "Scroll";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "8lj-2o-gVo"; */
+"8lj-2o-gVo.text" = "0";
+
+/* Class = "UILabel"; text = "Start typing to search"; ObjectID = "9Dg-J9-ZXP"; */
+"9Dg-J9-ZXP.text" = "Start typing to search";
+
+/* Class = "UILabel"; text = "Favorites"; ObjectID = "9Ud-6J-GZQ"; */
+"9Ud-6J-GZQ.text" = "Favorites";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "BjE-24-eNq"; */
+"BjE-24-eNq.text" = "0";
+
+/* Class = "UILabel"; text = ""; ObjectID = "EPD-sz-cnG"; */
+"EPD-sz-cnG.text" = "";
+
+/* Class = "UILabel"; text = "Followers"; ObjectID = "FSc-C7-L4O"; */
+"FSc-C7-L4O.text" = "Followers";
+
+/* Class = "UILabel"; text = "Some User"; ObjectID = "IBg-Ho-osQ"; */
+"IBg-Ho-osQ.text" = "Some User";
+
+/* Class = "UIButton"; normalTitle = "follow"; ObjectID = "Sl1-V9-twB"; */
+"Sl1-V9-twB.normalTitle" = "follow";
+
+/* Class = "UIButton"; selectedTitle = "unfollow"; ObjectID = "Sl1-V9-twB"; */
+"Sl1-V9-twB.selectedTitle" = "unfollow";
+
+/* Class = "UIButton"; normalTitle = ""; ObjectID = "Yjq-cF-4A5"; */
+"Yjq-cF-4A5.normalTitle" = "";
+
+/* Class = "UILabel"; text = "artists"; ObjectID = "ZzS-SE-CNG"; */
+"ZzS-SE-CNG.text" = "artists";
+
+/* Class = "UIButton"; normalTitle = ""; ObjectID = "bz1-hc-EeS"; */
+"bz1-hc-EeS.normalTitle" = "";
+
+/* Class = "UIButton"; normalTitle = ""; ObjectID = "emx-4Z-8b7"; */
+"emx-4Z-8b7.normalTitle" = "";
+
+/* Class = "UIButton"; selectedTitle = ""; ObjectID = "emx-4Z-8b7"; */
+"emx-4Z-8b7.selectedTitle" = "";
+
+/* Class = "UIButton"; normalTitle = ""; ObjectID = "fYZ-Rg-yNP"; */
+"fYZ-Rg-yNP.normalTitle" = "";
+
+/* Class = "UIButton"; normalTitle = "follow"; ObjectID = "gNe-KE-ghM"; */
+"gNe-KE-ghM.normalTitle" = "follow";
+
+/* Class = "UIButton"; selectedTitle = "unfollow"; ObjectID = "gNe-KE-ghM"; */
+"gNe-KE-ghM.selectedTitle" = "unfollow";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "gi9-Sd-xzd"; */
+"gi9-Sd-xzd.text" = "0";
+
+/* Class = "UILabel"; text = "ARTISTS"; ObjectID = "gpJ-wk-ro4"; */
+"gpJ-wk-ro4.text" = "ARTISTS";
+
+/* Class = "UILabel"; text = "friends"; ObjectID = "nGQ-hE-IFx"; */
+"nGQ-hE-IFx.text" = "friends";
+
+/* Class = "UILabel"; text = "Following"; ObjectID = "nlF-bW-re9"; */
+"nlF-bW-re9.text" = "Following";
+
+/* Class = "UIButton"; normalTitle = ""; ObjectID = "yAn-4c-h0o"; */
+"yAn-4c-h0o.normalTitle" = "";
+
+/* Class = "UIButton"; selectedTitle = ""; ObjectID = "yAn-4c-h0o"; */
+"yAn-4c-h0o.selectedTitle" = "";
